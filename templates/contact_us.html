@@ -73,19 +73,18 @@
 
                 <!-- Contact Form -->
                 <div class="md:w-1/2 p-6 rounded-lg shadow-lg">
-                    <form>
+                    <form id="contactForm">
                         <label class="block mb-2">Full Name</label>
-                        <input type="text"
+                        <input type="text" id="fullName"
                             class="w-full p-2 rounded bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-blue-400">
 
                         <label class="block mt-4 mb-2">Your Email</label>
-                        <input type="email"
+                        <input type="email" id="email"
                             class="w-full p-2 rounded bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-blue-400">
 
                         <label class="block mt-4 mb-2">Your Message</label>
-                        <textarea
+                        <textarea id="message"
                             class="w-full p-2 rounded bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-blue-400"></textarea>
-
                         <button type="submit"
                             class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
                             Send Message
@@ -123,6 +122,20 @@
             <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="Chat with us">
         </a>
     </div>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent actual form submission
+
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const subject = `Message from ${fullName}`;
+            const body = `Sender Email: ${email}%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(message)}`;
+
+            window.location.href = `mailto:deepesh.kumar.ug22@nsut.ac.in?subject=${encodeURIComponent(subject)}&body=${body}`;
+        });
+    </script>
 
 </body>
 
