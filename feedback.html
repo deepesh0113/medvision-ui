@@ -29,16 +29,16 @@
     <nav class="bg-gray-900 p-4">
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center space-x-2">
-                <a href="{{ url_for('index') }}">
-                    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="AI Logo" class="h-8 w-8"></a>
-                <a href="{{ url_for('index') }}">
+                <a href="index.html">
+                    <img src="logo.png" alt="AI Logo" class="h-8 w-8"></a>
+                <a href="index.html">
                     <h1 class="text-2xl font-bold">AI-Powered Disease Detection</h1>
                 </a>
             </div>
             <ul class="flex space-x-6">
-                <li><a href="{{ url_for('index') }}" class="hover:text-blue-400 transition">Home</a></li>
-                <li><a href="{{ url_for('about') }}" class="hover:text-blue-400 transition">About Us</a></li>
-                <li><a href="{{ url_for('contact_us') }}" class="hover:text-blue-400 transition">Contact</a></li>
+                <li><a href="index.html" class="hover:text-blue-400 transition">Home</a></li>
+                <li><a href="about.html" class="hover:text-blue-400 transition">About Us</a></li>
+                <li><a href="contact_us.html" class="hover:text-blue-400 transition">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -49,7 +49,7 @@
             <h2 class="text-3xl font-bold text-center mb-6">We Value Your Feedback</h2>
             <p class="text-gray-400 text-center mb-6">Please share your experience with us.</p>
 
-            <form action="{{ url_for('submit_feedback') }}" method="post">
+            <form action="submit_feedback.html" method="post">
                 <div class="mb-4">
                     <label for="name" class="block text-lg mb-1">Full Name</label>
                     <input type="text" id="name" name="name" required

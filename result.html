@@ -9,9 +9,9 @@
 </head>
 <body class="bg-black text-white flex flex-col items-center p-6"> 
     <div class="bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-2xl text-center">
-        <a href="{{ url_for('index') }}">
-            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="AI Logo" class="h-8 w-8"></a>
-        <a href="{{ url_for('index') }}">
+        <a href="index.html">
+            <img src="logo.png" alt="AI Logo" class="h-8 w-8"></a>
+        <a href="index.html">
         <h1 class="text-3xl font-bold text-blue-400 mb-4">AI-Powered Disease Detection</h1></a>
         
         <!-- Patient Details Section -->
@@ -86,7 +86,7 @@
 
             // Load logo image from the static folder
             const logoImg = new Image();
-            logoImg.src = "/static/images/logo.png";  // Adjust if needed
+            logoImg.src = "logo.png";  // Adjust if needed
 
             logoImg.onload = function () {
                 // Add background image
