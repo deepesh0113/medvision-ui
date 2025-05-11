@@ -6,7 +6,7 @@ function toggleMenu() {
 
 // ✅ Read More Function - Redirect to another page
 function readMore() {
-    window.location.href = "/about";
+    window.location.href = "about.html";
 }
 // Extra 1
 const testimonials = [
