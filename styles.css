@@ -466,3 +466,135 @@ footer {
     padding: 20px;
     background: rgba(0, 0, 0, 0.8);
 }
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .carousel {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-track img {
+        height: auto;
+    }
+
+    .service-container {
+        gap: 15px;
+    }
+
+    .footer-container {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footer-section {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        right: 0;
+        top: 60px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .text-section h2 {
+        font-size: 1.8em;
+    }
+
+    .text-section p {
+        font-size: 1em;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .step {
+        width: 100%;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 5%;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .carousel-track {
+        animation-duration: 24s; /* slower scroll for smaller screens */
+    }
+
+    .service-box {
+        width: 100%;
+    }
+
+    .read-more-btn,
+    .visit-diagnosis-btn {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    .testimonial-container,
+    .how-it-works {
+        padding: 20px;
+    }
+
+    .step img {
+        width: 50px;
+    }
+
+    .step h3 {
+        font-size: 18px;
+    }
+}
