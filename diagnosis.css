@@ -747,3 +747,27 @@ body:has(.dropdown-menu[style*="block"]) {
         text-align: center;
     }
 }
+
+
+  h1 {
+    color: #1E90FF;
+    text-align: center;
+    font-size: 6vw; /* Initially, font size relative to the screen width */
+    margin-top: 20px;
+  }
+
+  /* Adjust for smaller screens */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 8vw; /* Scales down further on small screens */
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 10vw; /* Scales down even more for very small screens */
+      margin-top: 5px;
+    }
+  }
+
